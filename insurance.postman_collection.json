@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "c639775f-9c13-488e-b829-3b0b45333741",
+		"name": "insurance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17178274"
+	},
+	"item": [
+		{
+			"name": "busca seguro disponivel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}{{host_secundary}}/api/v1/seguro/disponivel",
+					"host": [
+						"{{url_base}}{{host_secundary}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"seguro",
+						"disponivel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contratar seguro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\":\"27123456789\",\n    \"tipo\":\"OURO\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}{{host_secundary}}/api/v1/seguro/contratar",
+					"host": [
+						"{{url_base}}{{host_secundary}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"seguro",
+						"contratar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
